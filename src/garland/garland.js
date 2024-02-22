@@ -25,7 +25,7 @@ const garlandInit = () => {
   // Устанавливаем начальные CSS-стили для фона гирлянды
   style.textContent = `
     :root {
-      --garland-bg-size: 100px;
+      --garland-bg-size: 200px;
     }
 
     body {
@@ -35,6 +35,7 @@ const garlandInit = () => {
     .garland-elka {
       position: fixed;
       inset: 0;
+      background-size: var(--garland-bg-size);
       background-image: url('./img/garland/elka-bg.png');
       background-repeat: no-repeat;
       pointer-events: none;
@@ -69,13 +70,13 @@ const garlandInit = () => {
     }
 
     @media (max-width: 1600px) {
-      :root {
+      .garland-elka {
         --garland-bg-size: 100px;
       }
     }
 
     @media (max-width: 500px) {
-      :root {
+      .garland-elka {
         --garland-bg-size: 80px;
       }
     }  
