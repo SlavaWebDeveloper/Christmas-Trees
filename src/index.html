@@ -26,14 +26,15 @@
     <meta name="description" content="Описание проекта" />
     <meta name="author" content="Sidorov Vyacheslav" />
 
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="icon" href="./img/favicon.ico" sizes="any" />
+    <link rel="icon" href="./img/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
     <link rel="stylesheet" href="./styles/style.min.css" />
+    <script src="./scripts/main.min.js" defer></script>
   </head>
-    <body>
+  <body>
     <header class="header">
-      <div class="header__innerGrid container grid">
+      <div class="header__inner-Grid container grid">
         <svg
           class="header__logo logo"
           viewBox="0 0 164 76"
@@ -46,8 +47,7 @@
           <span class="burger__line"></span>
         </button>
 
-        <nav class="navigation header__navigation">
-          <!-- hidden-mobile -->
+        <nav class="navigation header__navigation hidden-mobile">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="/">Пихта Фразера</a>
@@ -64,13 +64,45 @@
           </ul>
         </nav>
 
-        <button class="button button__accent header__button">Консультация</button>
+        <button class="button button__accent header__button">
+          Консультация
+        </button>
       </div>
     </header>
 
     <main class="content">
       <section class="hero">
-        <div class="container"></div>
+        <div class="container hero__container">
+          <div class="hero__inner-image">
+            <img
+              src="./img/hero-bg.jpg"
+              alt=""
+              class="hero__img"
+              width="705"
+              height="769"
+              loading="lazy"
+            />
+          </div>
+          <div class="hero__body">
+            <h1 class="hero__title">
+              Встречай Новый Год с прекрасной живой ёлочкой!
+            </h1>
+            <div class="hero__description">
+              <p>У нас в наличии только самые пушистые и свежие ёлки</p>
+            </div>
+            <a class="hero__down" href="">
+              <img
+                src="./img/bauble.png"
+                alt=""
+                class="hero__down-img"
+                width="113"
+                height="139"
+                loading="lazy"
+              />
+              <span>Заказать</span>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section class="features">
