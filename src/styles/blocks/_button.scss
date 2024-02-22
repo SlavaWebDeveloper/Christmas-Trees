@@ -1,11 +1,11 @@
 .button {
   @include reset-button;
-  @include fluid-text(18, 12);
-  
+
   font-family: var(--font-family-base);
-  line-height: 130%;
+  line-height: 1.3;
   letter-spacing: 0.04em;
   font-weight: 700;
+  font-size: 18px;
   color: var(--color-light);
   border: 1px solid var(--color-button);
   border-radius: var(--border-radius-large);
@@ -14,12 +14,19 @@
   transition-property: background-color, box-shadow, outline;
   transition-duration: var(--transition-duration);
 
-  @include desktop {
+
+  @include tablet {
+    font-size: 16px;
     border-radius: var(--border-radius);
   }
 
-  @include tablet {
+  @include mobile {
+    font-size: 14px;
     border-radius: var(--border-radius-small);
+  }
+
+  @include mobile-s {
+    font-size: 12px;
   }
   
   // .button__accent

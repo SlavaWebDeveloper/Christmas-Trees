@@ -31,4 +31,16 @@
   --button-heigth: 51px;
 
   --transition-duration: 0.2s; 
+  
+  @include tablet {
+    --container-padding-x: 42px;
+  }
+
+  @include mobile-s {
+    --container-padding-x: 39px;
+  }
+
+  @include mobile-s {
+    --container-padding-x: 10px;
+  }
 }

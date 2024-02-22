@@ -18,13 +18,13 @@
 }
 
 .hidden-mobile {
-  @include tablet {
+  @include mobile {
     display: none !important;
   }
 }
 
 .visible-mobile {
-  @include tablet-above {
+  @include mobile-above {
     display: none !important;
   }
 }
