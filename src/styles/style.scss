@@ -4,6 +4,15 @@
   'mixins',
   'media',
   'variables',
-  'themes',
   'utils',
   'globals';
+
+
+@import 
+  'blocks/grid',
+  'blocks/button',
+  'blocks/burger',
+  'blocks/logo',
+  'blocks/navigation',
+  'blocks/header'
+;

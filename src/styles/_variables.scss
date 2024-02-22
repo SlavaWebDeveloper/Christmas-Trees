@@ -1,27 +1,34 @@
 :root {
-  --color-dark: #191a23;
-  --color-dark-alt: #292a32;
+  --color-dark: #262626;
   --color-light: #fff;
-  --color-accent: #b9ff66;
-  --color-gray: #f3f3f3;
-  --color-gray-alt: #898989;
 
-  --border: 1px solid var(--color-dark);
-  --border-radius: 14px;
-  --border-radius-small: 7px;
-  --border-radius-large: 45px;
+  --color-green-1: #00654e;
+  --color-green-2: #006e55;
+  --color-green-3: #005844;
 
-  --shadow: 0 5px 0 0 var(--color-dark);
+  --main-bg-color: #005844;
+  --second-bg-color: #c0b487;
 
-  --font-family-base: 'Space Grotesk', sans-serif;
+  --color-button: #c0b487;
+  --color-button-trigger: #e5ab39;
   
-  --container-width: 1240px;
+  --border: 1px solid var(--color-button);
+  --border-radius: 8px;
+  --border-radius-small: 6px;
+  --border-radius-large: 10px;
+  --border-radius-large-big: 20px;
+
+  --shadow: 4px 7px 20px 0 var(--color-dark);
+
+  --font-family-base: 'Arial', sans-serif;
+  --font-family-alt: 'Cormorant', serif;
+  
+  --container-width: 1290px;
   --container-padding-x: 20px;
 
-  --section-padding-y: 70px;
+  --section-padding-y: 40px;
 
-  --input-heigth: 59px;
-  --button-heigth: 68px;
+  --button-heigth: 51px;
 
   --transition-duration: 0.2s; 
 }

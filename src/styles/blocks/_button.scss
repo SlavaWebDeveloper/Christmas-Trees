@@ -1,0 +1,44 @@
+.button {
+  @include reset-button;
+  @include fluid-text(18, 12);
+  
+  font-family: var(--font-family-base);
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: var(--color-light);
+  border: 1px solid var(--color-button);
+  border-radius: var(--border-radius-large);
+  cursor: pointer;
+  box-shadow: 0 2px 6px 0 transparent;
+  transition-property: background-color, box-shadow, outline;
+  transition-duration: var(--transition-duration);
+
+  @include desktop {
+    border-radius: var(--border-radius);
+  }
+
+  @include tablet {
+    border-radius: var(--border-radius-small);
+  }
+  
+  // .button__accent
+
+  &__accent {
+    border-color: var(--color-button-trigger);
+    background-color: var(--color-button-trigger);
+
+    @include hover {
+      background-color: var(--main-bg-color);
+    }
+  
+    &:active {
+      background-color: var(--main-bg-color);
+      box-shadow: 0 2px 6px 0 rgba(2, 67, 52, 0.36);
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-dark);
+    }
+  }
+}
