@@ -1,0 +1,31 @@
+.tree {
+  // .products
+
+  &-products {
+		--treeCardOffsetY: 80px;
+  }
+
+  // .tree__list
+
+  &__list {
+  }
+
+  // .tree__item
+
+  &__item {
+		color: var(--color-light);
+		background-color: var(--color-green-4);
+
+		&:nth-child(3n+1) {
+			background-color: var(--color-green-2);
+		}
+
+		&:nth-child(3n+2) {
+			background-color: var(--color-green-1);
+		}
+
+		&:nth-child(3n) {
+			background-color: var(--color-green-3);
+		}
+  }
+}
