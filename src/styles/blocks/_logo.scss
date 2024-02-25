@@ -1,15 +1,14 @@
 .logo {
-  width: 164px;
-  height: 76px;
+  width: 100%;
+  max-width: 164px;
+  height: auto;
   color: var(--color-green-2);
 
   @include desktop-s {
-    width: 115px;
-    height: 55px;
+    max-width: 115px;
   }
 
   @include mobile-s {
-    width: 73px;
-    height: 35px;
+    max-width: 73px;
   }
 }
