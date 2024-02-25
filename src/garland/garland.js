@@ -36,7 +36,7 @@ const garlandInit = () => {
       position: fixed;
       inset: 0;
       background-size: var(--garland-bg-size);
-      background-image: url('./img/garland/elka-bg.png');
+      background-image: url('./garland/elka-bg.png');
       background-repeat: no-repeat;
       pointer-events: none;
       z-index: 399;
@@ -48,7 +48,7 @@ const garlandInit = () => {
       left: 0;
       right: 0;
       height: 36px;
-      background-image: url('./img/garland/garland-bg.png');
+      background-image: url('./garland/garland-bg.png');
       pointer-events: none;
       z-index: 300;
     }
