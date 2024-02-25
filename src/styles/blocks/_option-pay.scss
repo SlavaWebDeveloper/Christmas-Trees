@@ -1,0 +1,84 @@
+.option-pay {
+
+  // .option-pay__picture-wrapper
+
+  &__picture-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light);
+    padding: 35px;
+    min-height: 146px;
+    margin-bottom: 20px;
+
+    @include tablet {
+      padding: 24px;
+      margin-bottom: 15px;
+    }
+
+    @include mobile {
+      padding: 17px;
+      margin-bottom: 10px;
+    }
+
+    @include mobile-s {
+      min-height: 73px;
+      padding: 19px;
+    }
+  }
+
+  // .option-pay__picture
+
+  &__picture {
+    @include mobile-s {
+      max-width: 144px; 
+      height: auto;
+    }
+  }
+
+  // .option-pay__title
+
+  &__title {
+    text-wrap: balance;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: var(--color-light);
+    margin-bottom: 15px;
+
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+
+    @include mobile-s {
+      font-size: 14px;
+    }  
+  }
+
+  // .option-pay__description
+
+  &__description {
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    color: var(--color-light);
+    
+    @include tablet {
+      font-size: 16px;
+    }
+    
+    @include mobile {
+      font-size: 14px;
+    }
+
+    @include mobile-s {
+      font-size: 12px;
+    }  
+  }
+}
