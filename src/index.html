@@ -34,7 +34,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__inner-Grid container grid">
+      <div class="header__inner-grid container grid">
         <svg
           class="header__logo logo"
           viewBox="0 0 164 76"
@@ -50,16 +50,32 @@
         <nav class="navigation header__navigation hidden-mobile">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="/">Пихта Фразера</a>
+              <a 
+              class="navigation__link" 
+              href="#phrasera">
+              Пихта Фразера
+            </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="/">Русская ель</a>
+              <a 
+              class="navigation__link" 
+              href="#spruce">
+              Русская ель
+            </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="/">Сибирская пихта</a>
+              <a 
+              class="navigation__link" 
+              href="#fir">
+              Сибирская пихта
+            </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="/">Как оплатить?</a>
+              <a 
+              class="navigation__link" 
+              href="#pay">
+              Как оплатить?
+            </a>
             </li>
           </ul>
         </nav>
@@ -90,7 +106,7 @@
             <div class="hero__description">
               <p>У нас в наличии только самые пушистые и свежие ёлки</p>
             </div>
-            <a class="hero__down" href="">
+            <a class="hero__down" href="#pay">
               <img
                 src="./img/bauble.png"
                 alt=""
@@ -130,7 +146,7 @@
         <ul class="tree__list">
           <li class="tree__item">
             <div class="container">
-              <article class="tree-card">
+              <article class="tree-card" id="phrasera">
                 <div class="tree-card__info">
                   <h2 class="tree-card__title">Пихта Фразера</h2>
                   <div class="tree-card__features">
@@ -171,7 +187,7 @@
           </li>
           <li class="tree__item">
             <div class="container">
-              <article class="tree-card tree-card_odd">
+              <article class="tree-card tree-card-odd" id="spruce">
                 <div class="tree-card__info">
                   <h2 class="tree-card__title">Русская ель</h2>
                   <div class="tree-card__features">
@@ -213,7 +229,7 @@
           </li>
           <li class="tree__item">
             <div class="container">
-              <article class="tree-card">
+              <article class="tree-card" id="fir">
                 <div class="tree-card__info">
                   <h2 class="tree-card__title">Сибирская пихта</h2>
                   <div class="tree-card__features">
@@ -255,7 +271,7 @@
         </ul>
       </section>
 
-      <section class="pay">
+      <section class="pay" id="pay">
         <div class="container">
           <h2 class="pay__title">Как можно оплатить</h2>
           <ul class="pay__list grid grid--3">
