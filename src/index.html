@@ -50,37 +50,23 @@
         <nav class="navigation header__navigation hidden-mobile">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a 
-              class="navigation__link" 
-              href="#phrasera">
-              Пихта Фразера
-            </a>
+              <a class="navigation__link" href="#phrasera"> Пихта Фразера </a>
             </li>
             <li class="navigation__item">
-              <a 
-              class="navigation__link" 
-              href="#spruce">
-              Русская ель
-            </a>
+              <a class="navigation__link" href="#spruce"> Русская ель </a>
             </li>
             <li class="navigation__item">
-              <a 
-              class="navigation__link" 
-              href="#fir">
-              Сибирская пихта
-            </a>
+              <a class="navigation__link" href="#fir"> Сибирская пихта </a>
             </li>
             <li class="navigation__item">
-              <a 
-              class="navigation__link" 
-              href="#pay">
-              Как оплатить?
-            </a>
+              <a class="navigation__link" href="#pay"> Как оплатить? </a>
             </li>
           </ul>
         </nav>
 
-        <button class="button button__accent header__button">
+        <button
+          class="button button__accent header__button button__consultation" data-consultation="true"
+        >
           Консультация
         </button>
       </div>
@@ -163,7 +149,10 @@
                     </p>
                   </div>
                   <div class="tree-card__button-wrapper">
-                    <button class="tree-card__button button" href="/">
+                    <button
+                      class="tree-card__button button tree-card_button-order"
+                      data-order="Пихта Фразера"
+                    >
                       Заказать
                     </button>
                     <a
@@ -205,7 +194,10 @@
                     </p>
                   </div>
                   <div class="tree-card__button-wrapper">
-                    <button class="tree-card__button button" href="/">
+                    <button
+                      class="tree-card__button button tree-card_button-order"
+                      data-order="Русская ель"
+                    >
                       Заказать
                     </button>
                     <a
@@ -246,7 +238,10 @@
                     </p>
                   </div>
                   <div class="tree-card__button-wrapper">
-                    <button class="tree-card__button button" href="/">
+                    <button
+                      class="tree-card__button button tree-card_button-order"
+                      data-order="Сибирская пихта"
+                    >
                       Заказать
                     </button>
                     <a
@@ -454,6 +449,114 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay overlay-order">
+      <div class="modal">
+        <button type="button" class="modal__close">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_134_2)">
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_134_2">
+                <path fill="#currentColor" d="M0 0h24v24H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <h2 class="modal__title">Оформить заказ</h2>
+
+        <form
+          class="modal__form"
+          action="https://jsonplaceholder.typicode.com/posts"
+          method="post"
+        >
+          <label class="modal__label">
+            <span class="modal__label-text">ФИО</span>
+            <input
+              class="modal__input"
+              type="text"
+              name="bio"
+              placeholder="Введите ваше ФИО"
+              required
+            />
+          </label>
+          <label class="modal__label modal__label-last">
+            <span class="modal__label-text">Телефон</span>
+            <input
+              class="modal__input"
+              type="tel"
+              name="tel"
+              placeholder="Введите ваш номер телефона"
+              required
+            />
+          </label>
+
+          <input class="modal__order" type="hidden" name="order" />
+
+          <button class="modal__button button button__accent">
+            Заказать звонок
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="overlay overlay-consultation">
+      <div class="modal">
+        <button type="button" class="modal__close">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_134_2)">
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_134_2">
+                <path fill="#currentColor" d="M0 0h24v24H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <h2 class="modal__title">Перезвоните мне</h2>
+
+        <form
+          class="modal__form"
+          action="https://jsonplaceholder.typicode.com/posts"
+          method="post"
+        >
+          <label class="modal__label">
+            <span class="modal__label-text">ФИО</span>
+            <input
+              class="modal__input"
+              type="text"
+              name="bio"
+              placeholder="Введите ваше ФИО"
+              required
+            />
+          </label>
+          <label class="modal__label modal__label-last">
+            <span class="modal__label-text">Телефон</span>
+            <input
+              class="modal__input"
+              type="tel"
+              name="tel"
+              placeholder="Введите ваш номер телефона"
+              required
+            />
+          </label>
+
+          <input class="modal__consultation" type="hidden" name="consultation" />
+
+          <button class="modal__button button button__accent">
+            Заказать звонок
+          </button>
+        </form>
+      </div>
+    </div>
 
     <svg class="visually-hidden">
       <symbol
