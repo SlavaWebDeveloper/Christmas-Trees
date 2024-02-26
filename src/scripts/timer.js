@@ -57,7 +57,6 @@ const timers = () => {
 
     // Обновление отображаемого времени
     timerCount.textContent = `${d} ${h} ${m} ${s}`
-    console.log('timerCount: ', timerCount);
 
     // Повторный запуск таймера через 1 секунду
     if (timeRemaining > 0) {

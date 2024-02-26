@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Cormorant';
-  src:  local('Cormorant-Bold'), local('Cormorant') 
-      url('./fonts/cormorant-v11-latin_cyrillic-700.woff') format('woff2')
-      url('./fonts/cormorant-v11-latin_cyrillic-700.woff') format('woff');
+  src:  local('Cormorant-Bold'), local('Cormorant'),
+      url('../fonts/cormorant-v11-latin_cyrillic-700.woff') format('woff2')
+      url('../fonts/cormorant-v11-latin_cyrillic-700.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Arial';
-  src: url('Arial-BoldItalicMT.woff2') format('woff2');
+  src: url('../fonts/Arial-BoldItalicMT.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Arial';
-  src: url('ArialMT.woff2') format('woff2');
+  src: url('../fonts/ArialMT.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
